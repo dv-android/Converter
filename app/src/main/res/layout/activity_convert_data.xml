@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hfad.converter.ConvertDataActivity">
+
+    <TextView
+        android:text="Currency"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:text="From"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+
+        android:gravity="left"
+        android:textSize="23sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        />
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:spinnerMode="dropdown" />
+    <EditText
+        android:id="@+id/editText1"
+
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="25sp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Enter a value">
+
+    </EditText>
+    <TextView
+        android:text="To"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+
+        android:gravity="left"
+        android:textSize="23sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        />
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:spinnerMode="dropdown" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Calculate"
+        android:onClick="convertData"/>
+    <TextView
+        android:text="Result"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+
+        android:gravity="left"
+        android:textSize="23sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/textView1"
+        android:text=""
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:background="#FFFF99"
+        android:gravity="left"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:text="Currency rates are not updated on daily basis"
+        android:layout_width="350dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="20dp"
+
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        />
+</LinearLayout>
